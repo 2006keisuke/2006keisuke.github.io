@@ -36,13 +36,48 @@ img{
 }
 
 /*すべてのページに適用 - ヘッダー */
+.header{
+    padding-top:40px;
+    background-image:url(../image/stripe.png);
+    background-repeat:repeat-x;
+}
 .logo{
     text-align: center;/*中央ぞろえ*/
 }
 
+.nav ul{
+    margin:30px 0 0 0;
+    padding:0;/*すべて0にする*/
+    list-style-type:none;
+
+    display:flex;
+    justify-content:center;
+    gap:40px;
+}
+.nav a:link{
+    color:#253958;
+}
+.nav a:visited{
+    color:#253958;
+}
+.nav a:hover{
+    text-decoration:none;
+}
+.nav a:active{
+    text-decoration:none;
+}
+
 /*すべてのページに適用 - ヒーロー　*/
 .hero{
+    background-repeat:no-repeat;
+    background-position:center;
+    background-size:cover;
+    color:#FFFFFF;
     text-align: center;
+}
+.hero.index{
+    padding:287px 0;/*上下に287pxあける*/
+    background-image:url(../image/home-hero.jpg);
 }
 /*すべてのページに適用 - メイン　*/
 main{
@@ -79,5 +114,19 @@ main h2{
 }
 
 /*個別のスタイル*/
-
+.logo-whale{
+    text-align:center;
+}
+.shop-info{
+    border-collapse:collapse;
+}
+.shop-info th, .shop-info td{
+    border:1px solid #DBDBDB;
+    padding:20px;
+}
+.shop-info th{
+    width:112px;
+    text-align:left;
+    vertical-align:top;
+}
 /*index.html*/
