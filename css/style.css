@@ -1,0 +1,83 @@
+/*すべてのページに適用される設定*/
+html{ 
+    font-size:16px;
+    font-family:sans-serif;
+}
+*{
+    box-sizing:boder-box;
+}/*すべてに適用*/
+body{
+    margin:0 0 0 0;/*0なのでpxは省略可能 (上、右、下、左マージン)*/
+}
+
+p,li,td{
+    line-height:1.7;
+}/*行間*/
+
+a:link{
+    color:#F07D34;
+    text-decoration:none;
+}
+a:visited{
+    color:#F07D34;
+    text-decoration:none;
+}
+a:hover{
+    color:#F07D34;
+    text-decoration:underline;
+}
+a:active{
+    color:#F07D34;
+    text-decoration:underline;
+}/*リンクの状態(疑似クラスは必ずこの順番!!)*/
+
+img{
+    max-width:100%;/*画像の伸縮*/
+}
+
+/*すべてのページに適用 - ヘッダー */
+.logo{
+    text-align: center;/*中央ぞろえ*/
+}
+
+/*すべてのページに適用 - ヒーロー　*/
+.hero{
+    text-align: center;
+}
+/*すべてのページに適用 - メイン　*/
+main{
+    margin:90px auto 90px auto;
+    max-width:1000px;
+}
+main h2{
+    margin:60px 0 20px 0;
+    border-bottom:2px solid #253958;/*solidは"実線"*/
+    padding:0 0 5px 0;
+    color: #253958;
+    font-size:1.3rem;   /*htmlの設定値*<設定値>*/
+}
+
+.logo-whale{
+    text-align: center;
+}
+
+/*すべてのページに適用 - フッター　*/
+.gotop{
+    text-align: center;
+}
+.copyright{
+    margin-top:20px;
+    margin-bottom:0;
+
+    padding-top:75px;
+    padding-bottom:75px;
+
+    background-color:#253958;
+    color:#FFFFFF;
+
+    text-align: center;
+}
+
+/*個別のスタイル*/
+
+/*index.html*/
