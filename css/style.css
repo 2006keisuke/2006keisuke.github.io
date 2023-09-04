@@ -69,6 +69,7 @@ img{
 
 /*すべてのページに適用 - ヒーロー　*/
 .hero{
+    padding:137px 0;/*上下に137pxあける*/
     background-repeat:no-repeat;
     background-position:center;
     background-size:cover;
@@ -76,8 +77,17 @@ img{
     text-align: center;
 }
 .hero.index{
-    padding:287px 0;/*上下に287pxあける*/
+    padding:287px 0;
     background-image:url(../image/home-hero.jpg);
+}
+.hero.access{
+    background-image: url(../image/access-hero.jpg);
+}
+.hero.menu{
+    background-image: url(../image/menu-hero.jpg);
+}
+.hero.contact{
+    background-image: url(../image/contact-hero.jpg);
 }
 /*すべてのページに適用 - メイン　*/
 main{
@@ -114,6 +124,7 @@ main h2{
 }
 
 /*個別のスタイル*/
+/*index.html*/
 .logo-whale{
     text-align:center;
 }
@@ -129,4 +140,10 @@ main h2{
     text-align:left;
     vertical-align:top;
 }
-/*index.html*/
+
+/*menu.html*/
+.items{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20px;
+}
