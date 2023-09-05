@@ -29,7 +29,37 @@
 
     <!--メイン-->
     <main>
-        
+        <form action="result.html">
+            <p>
+                <label for="kind">お問い合わせの種類</label><br>
+                <select name="kind" id="kind">
+                    <option value="1">ご予約</option>
+                    <option value="2">イベントに関するお問い合わせ</option>
+                    <option value="3">その他</option>
+                </select>
+            </p>
+            <p>
+                初めてのご来店ですか?<br>
+                <label><input type="radio" name="first" value="yes" checked>はい</label><br>
+                <label><input type="radio" name="first" value="no">いいえ</label><br>
+            </p>
+            <p>
+                当カフェをお知りになったきっかけは?<br>
+                <label><input type="checkbox" name="how" value="friend">知り合いの紹介で</label><br>
+                <label><input type="checkbox" name="how" value="magazine">SNS、ウェブサイト、雑誌などを見て</label><br>
+            </p>
+            <p>
+                <label for="submit">お問い合わせの件名</label><br>
+                <input type="text" name="subject" placeholder="タイトル" id="submit">
+            </p>
+            <p>
+                <label for="message">お問い合わせの具体的な件名</label><br>
+                <textarea name="message" id="message"></textarea>
+            </p>
+            <p class="submit">
+                <input type="submit" value="送信">
+            </p>
+        </form>
     </main>
     <!--メインここまで-->
 
