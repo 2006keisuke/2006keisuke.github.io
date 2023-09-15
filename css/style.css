@@ -3,9 +3,14 @@ html{
     font-size:16px;
     font-family:sans-serif;
 }
+/*
 *{
+    outline:1px solid #FF0000;
     box-sizing:boder-box;
-}/*すべてに適用*/
+}
+*/
+
+/*すべてに適用*/
 body{
     margin:0 0 0 0;/*0なのでpxは省略可能 (上、右、下、左マージン)*/
 }
@@ -37,7 +42,7 @@ img{
 
 /*すべてのページに適用 - ヘッダー */
 .header{
-    padding-top:40px;
+    padding:40px 0 40px 0;
     background-image:url(../image/stripe.png);
     background-repeat:repeat-x;
 }
@@ -46,13 +51,14 @@ img{
 }
 
 .nav ul{
-    margin:30px 0 0 0;
+    margin:0;
     padding:0;/*すべて0にする*/
     list-style-type:none;
 
     display:flex;
     justify-content:center;
     gap:40px;
+    
 }
 .nav a:link{
     color:#253958;
@@ -67,6 +73,12 @@ img{
     text-decoration:none;
 }
 
+header{
+    display:flex;
+    justify-content:center;
+    gap:60px;
+}
+
 /*すべてのページに適用 - ヒーロー　*/
 .hero{
     padding:137px 0;/*上下に137pxあける*/
@@ -77,7 +89,7 @@ img{
     text-align: center;
 }
 .hero.index{
-    padding:287px 0;
+    padding:287px 0;/*287*/
     background-image:url(../image/home-hero.jpg);
 }
 .hero.access{
@@ -89,9 +101,10 @@ img{
 .hero.contact{
     background-image: url(../image/contact-hero.jpg);
 }
+
 /*すべてのページに適用 - メイン　*/
 main{
-    margin:90px auto 90px auto;
+    margin:60px auto 60px auto;
     max-width:1000px;
 }
 main h2{
@@ -104,6 +117,34 @@ main h2{
 
 .logo-whale{
     text-align: center;
+}
+
+.links{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.link{
+    padding:30px 0;
+    text-align:center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-size:1.2rem;
+    margin:5px 5px;
+}
+.link a{
+    color:#FFFFFF;
+}
+.link.goindex{
+    background-image: url(../image/home-hero.jpg);
+}
+.link.goaccess{
+    background-image: url(../image/access-hero.jpg);
+}
+.link.gocontact{
+    background-image: url(../image/contact-hero.jpg);
+}
+.link.gomenu{
+    background-image: url(../image/menu-hero.jpg);
 }
 
 /*すべてのページに適用 - フッター　*/
